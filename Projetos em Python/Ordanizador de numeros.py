@@ -1,4 +1,11 @@
-numero = [1,6,2,4,8,2,0,4,2,9,5,7,9,8,7,22,14,65,2,1,5]
+numero = [int(input('Digite um valor: ')]
+print('Quantas vezes gostaria de repetir ? :')
+x = int(input(':'))
+k =1
+while k < x:
+    numero += [int(input('Digite um valor: '))]
+    k+=1
+
 
 z = []
 contagem = 0
