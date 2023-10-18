@@ -1,4 +1,4 @@
-numero = [int(input('Digite um valor: ')]
+numero = [int(input('Digite um valor: '))]
 print('Quantas vezes gostaria de repetir ? :')
 x = int(input(':'))
 k =1
