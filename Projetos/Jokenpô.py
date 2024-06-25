@@ -1,3 +1,7 @@
+"""
+Este módulo fornece funcionalidades para um jogo de Pedra, Papel e Tesoura.
+"""
+
 from random import choice
 
 jogador_vitoria = 0
