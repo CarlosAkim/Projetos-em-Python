@@ -1,0 +1,38 @@
+curso_udemy/
+
+# Ambientes Virtuais
+venv/
+.env/
+.venv/
+
+# Arquivos de configuração de IDEs
+.idea/
+.vscode/
+.mypy_cache/
+
+# Arquivos de Logs
+*.log
+
+# Arquivos Temporários e de Backup
+*.tmp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Arquivos de Build e Distribuição
+build/
+dist/
+*.egg-info/
+
+# Arquivos Sensíveis
+.env
+.env.local
+*.pem
+*.key
+
+# Arquivos de Saída de Compilação
+*.pyc
+*.pyo
+*.exe
+*.dll
