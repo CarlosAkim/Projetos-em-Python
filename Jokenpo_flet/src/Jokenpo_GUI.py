@@ -113,9 +113,9 @@ def main(page: ft.Page):
         page.update()  # Atualiza a página para refletir o resultado
     
     # Imagens usadas no jogo
-    pedra_img = "Projetos-em-Python\Projetos\Jokenpo_flet\imagems jokepo\pedra.png"
-    papel_img = "Projetos-em-Python\Projetos\Jokenpo_flet\imagems jokepo\papel.png"
-    tesoura_img = "Projetos-em-Python\Projetos\Jokenpo_flet\imagems jokepo\Tesoura.png"
+    pedra_img = "Projetos-em-Python\Jokenpo_flet\imagems jokepo\pedra.png"
+    papel_img = "Projetos-em-Python\Jokenpo_flet\imagems jokepo\papel.png"
+    tesoura_img = "Projetos-em-Python\Jokenpo_flet\imagems jokepo\Tesoura.png"
 
     # Cria instâncias do MeuConteiner com imagens para a máquina
     pedra_maquina = MeuConteiner(image_url=pedra_img, id="pedra_maquina")
