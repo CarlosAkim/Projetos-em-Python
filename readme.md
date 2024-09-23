@@ -1,4 +1,3 @@
 # Projeto Python
-
-Este repositório contém scripts e módulos em Python onde aplico o conhecimento que adquiro atrás de cursos e aplico em meus projetos, espero que gostem. 
+Este repositório contém scripts e módulos em Python nos quais aplico o conhecimento adquirido por meio de cursos e projetos pessoais. Espero que gostem!
 
