@@ -1,4 +1,4 @@
-import flet as ft
+import flet as ft #type:ignore
 import random
 import threading
 from time import sleep
@@ -106,8 +106,6 @@ def main(page: ft.Page):
         else:
             mostrar_resultado("Máquina Ganhou!")
         
-        # Exibe as jogadas no console para depuração
-        print(jogada_player, jogada_maquina)
     
     # Função que exibe o resultado do jogo na interface
     def mostrar_resultado(text: str):

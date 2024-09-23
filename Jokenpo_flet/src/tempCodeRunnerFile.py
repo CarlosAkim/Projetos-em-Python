@@ -1,0 +1,1 @@
+Projetos-em-Python\Projetos\Jokenpo_flet\imagems jokepo\papel.png
