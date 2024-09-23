@@ -1,0 +1,44 @@
+# Ignorar arquivos de compilação Python
+__pycache__/
+*.py[cod]
+
+# Ignorar arquivos de ambiente virtual
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Ignorar configurações de IDEs comuns
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de banco de dados temporários
+*.sqlite3
+
+# Ignorar arquivos de testes e cobertura de código
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Ignorar arquivos de cache de pacotes
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Ignorar configurações locais
+*.local
+
+# Ignorar arquivos temporários do sistema
+*.swp
+*.DS_Store
+
