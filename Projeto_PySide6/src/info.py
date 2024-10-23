@@ -1,7 +1,14 @@
-from PySide6.QtWidgets import Qlabel, QWidget
+from PySide6.QtWidgets import QLabel, QWidget
+from variable import SMALL_FONTE_SIZE
+from PySide6.QtCore import Qt
 
-class info(Qlabel):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        ...
+class Info(QLabel):
+    def __init__(self, text: str, parent: QWidget | None = None):
+        super().__init__(text, parent)
+        self.configStyle()
+    
+    def configStyle(self):
+        self.setStyleSheet(f'font-size: {SMALL_FONTE_SIZE}px')
+        self.setAlignment(Qt.AlignmentFlag.AlignRight)
+        
             
