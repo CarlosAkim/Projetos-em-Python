@@ -23,10 +23,7 @@ if __name__ == "__main__":
     # Noss Grid
     buttonGrid = myGrid()
     window.vLayout.addLayout(buttonGrid) #a Adicionando o espaço do Layout
-    buttonGrid.addWidget(MyButton("0"), 0, 0) # adicionando os buttons
-    buttonGrid.addWidget(MyButton("1"), 0, 1)
-    buttonGrid.addWidget(MyButton("2"), 0, 2)
-    buttonGrid.addWidget(MyButton("3"), 1, 0)
+    
     
     
     
