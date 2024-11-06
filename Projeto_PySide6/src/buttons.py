@@ -1,10 +1,12 @@
 from PySide6.QtWidgets import QPushButton, QGridLayout, QWidget
 from variable import MEDIUM_FONTE_SIZE
 from utils import isEmpty, notNumOrDot
+from display import Display
 
 class MyButton(QPushButton):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        
         self.configButton()
         
     def configButton(self):
@@ -15,7 +17,7 @@ class MyButton(QPushButton):
         self.setProperty('cssClass', 'specialButton')
         
 class myGrid(QGridLayout):
-    def __init__(self, parent: QWidget | None = None, *args, **kwargs):
+    def __init__(self,display: Display, parent: QWidget | None = None, *args, **kwargs):
         super().__init__(parent)
         
         self._gridMaks = [
@@ -25,7 +27,7 @@ class myGrid(QGridLayout):
             ["1", "2", "3", "+"],
             ["0", "", ".", "="],
         ]
-        
+        self.display = display
         self._makeGrid() # Chama a função no iniciar
         
     # Função que adiciona os elementos ao grid
@@ -46,3 +48,9 @@ class myGrid(QGridLayout):
 
                 # Adiciona o botão normalmente
                 self.addWidget(button, i, j)
+                
+                button.clicked.connect(self._insertButtonTextDisplay) # comando que aciona quando clicar em valor na calculadora
+    
+    def _insertButtonTextDisplay(self, checked, button): # Função que fara o valor acionado aparecer no display
+        self.display.setText("Cliked")
+        print(123, checked, button.text())

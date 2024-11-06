@@ -13,7 +13,7 @@ if __name__ == "__main__":
     window = MyClass()
     
     # info
-    info = Info('teste')
+    info = Info('')
     window.addToVLayout(info)
     
     # Display
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     window.addToVLayout(display)  # Adicionando Display
     
     # Noss Grid
-    buttonGrid = myGrid()
+    buttonGrid = myGrid(display)
     window.vLayout.addLayout(buttonGrid) #a Adicionando o espaço do Layout
     
     
